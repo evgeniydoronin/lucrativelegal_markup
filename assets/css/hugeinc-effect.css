@@ -1,0 +1,277 @@
+/* HugeInc Effect - Секция прокрутки карточек услуг */
+
+/* Основной контейнер для эффекта прокрутки */
+.hugeinc-services-section .pin-spacer {
+    height: 1800vh; /* 150vh на каждую карточку (12 карточек) - больше времени для чтения */
+    position: relative;
+}
+
+.hugeinc-services-section .js-cards-viewer {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.hugeinc-services-section .js-cards-list {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили карточек */
+.hugeinc-services-section .js-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.hugeinc-services-section .js-card.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hugeinc-services-section .card-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Изображения карточек */
+.hugeinc-services-section .js-card-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    justify-self: center;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hugeinc-services-section .js-card.active .js-card-image {
+    transform: scale(1);
+}
+
+/* Заголовки карточек */
+.hugeinc-services-section .js-client-name {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hugeinc-services-section .js-card.active .js-client-name {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Новый скроллящийся заголовок как на HugeInc */
+.hugeinc-services-section .js-scroll-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 75vh); /* Начальная позиция - снизу экрана */
+    font-size: 6rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    mix-blend-mode: difference; /* Эффект смешивания как на оригинале */
+    transition: none; /* Убираем CSS transitions, используем только GSAP */
+}
+
+/* Активное состояние скроллящегося заголовка */
+.hugeinc-services-section .js-scroll-title.active {
+    opacity: 1;
+}
+
+/* Обертка для описания */
+.hugeinc-services-section .card-description-wrapper {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Описание карточек */
+.hugeinc-services-section .js-card-description {
+    font-size: 1.2rem;
+    color: white; /* Изменено на белый цвет */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s, 
+                opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+}
+
+.hugeinc-services-section .js-card.active .js-card-description {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Кнопки карточек */
+.hugeinc-services-section .js-card-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.hugeinc-services-section .js-card.active .js-card-cta {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, 
+                opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
+                background 0.3s ease;
+}
+
+.hugeinc-services-section .js-card-cta:hover {
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Счетчик карточек */
+.hugeinc-services-section .card-counter {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.hugeinc-services-section .js-client-number {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.hugeinc-services-section .js-client-number-units {
+    font-weight: 700;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hugeinc-services-section .js-client-name {
+        font-size: 2.5rem;
+    }
+    
+    .hugeinc-services-section .card-content {
+        grid-template-rows: auto auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .hugeinc-services-section .js-card-image {
+        max-width: 100%;
+    }
+    
+    .hugeinc-services-section .js-card-description {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hugeinc-services-section .card-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 80px;
+    }
+    
+    .hugeinc-services-section .card-description-wrapper {
+        text-align: left;
+    }
+    
+    .hugeinc-services-section .js-client-name {
+        text-align: left;
+    }
+}
+
+/* Темы карточек - 12 услуг */
+.hugeinc-services-section .js-card[data-theme="web-dev"] {
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="adwords"] {
+    background: linear-gradient(135deg, #34A853 0%, #FBBC04 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="design"] {
+    background: linear-gradient(135deg, #EA4335 0%, #FF6D01 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="seo"] {
+    background: linear-gradient(135deg, #FBBC04 0%, #FF9800 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="local-service"] {
+    background: linear-gradient(135deg, #1877F2 0%, #00BCD4 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="law-firm"] {
+    background: linear-gradient(135deg, #FF6D01 0%, #E91E63 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="medical"] {
+    background: linear-gradient(135deg, #00BCD4 0%, #2E7D32 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="ecommerce"] {
+    background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="financial"] {
+    background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="dropship"] {
+    background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="video"] {
+    background: linear-gradient(135deg, #E91E63 0%, #9C27B0 100%);
+}
+
+.hugeinc-services-section .js-card[data-theme="app-dev"] {
+    background: linear-gradient(135deg, #673AB7 0%, #3F51B5 100%);
+}

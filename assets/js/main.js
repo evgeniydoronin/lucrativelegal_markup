@@ -2151,5 +2151,64 @@
 		$(this).addClass('active');
 	});
 
+	// 93. Astronaut SVG Animation Setup //
+	let astronautInitialized = false; // Флаг для предотвращения повторной инициализации
+	
+	function initializeAstronautSVG() {
+		// Проверяем, не была ли анимация уже инициализирована
+		if (astronautInitialized) {
+			console.log('⚠️ Анимация космонавта уже инициализирована, пропускаем...');
+			return;
+		}
+		
+		console.log('🚀 Инициализация анимации космонавта...');
+		
+		// Проверяем наличие контейнера
+		const astronautContainer = document.getElementById('astronaut-container');
+		
+		if (!astronautContainer) {
+			console.error('❌ Контейнер #astronaut-container не найден!');
+			return;
+		}
+		
+		// Проверяем, не добавлен ли уже анимированный SVG
+		const existingAnimatedSVG = astronautContainer.querySelector('.astronaut-svg');
+		if (existingAnimatedSVG) {
+			console.log('⚠️ Анимированный SVG уже существует, пропускаем добавление...');
+		} else {
+			// Проверяем наличие функции createAstronautSVG
+			if (typeof createAstronautSVG === 'function') {
+				// Добавляем анимированный SVG поверх статичного
+				const svgHTML = createAstronautSVG();
+				astronautContainer.insertAdjacentHTML('beforeend', svgHTML);
+				console.log('✅ Анимированный SVG космонавта добавлен');
+			} else {
+				console.error('❌ Функция createAstronautSVG не найдена');
+				return;
+			}
+		}
+		
+		// Проверяем что элементы .draw-me появились в анимированном SVG
+		const animatedDrawElements = document.querySelectorAll('#astronaut-container .astronaut-svg .draw-me');
+		console.log(`🔍 Найдено анимированных элементов: ${animatedDrawElements.length}`);
+		
+		// Небольшая задержка перед инициализацией анимации
+		setTimeout(() => {
+			// Инициализируем анимацию космонавта
+			if (typeof initializeAstronautDrawing === 'function') {
+				initializeAstronautDrawing();
+				astronautInitialized = true; // Помечаем как инициализированный
+				console.log('✅ Анимация космонавта полностью инициализирована');
+			} else {
+				console.error('❌ Функция initializeAstronautDrawing не найдена');
+			}
+		}, 100);
+	}
+
+	// Инициализируем космонавта после загрузки DOM
+	$(document).ready(function() {
+		initializeAstronautSVG();
+	});
+
 
 })(jQuery);
