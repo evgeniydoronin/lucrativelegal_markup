@@ -8,8 +8,8 @@
 
 .hugeinc-services-section .js-cards-viewer {
     position: sticky;
-    top: 0;
-    height: 100vh;
+    top: 70px;
+    height: calc(100vh - 70px);
     width: 100%;
     overflow: hidden;
     background: #000;
@@ -55,52 +55,31 @@
     gap: 40px;
 }
 
-/* Изображения карточек */
+/* Изображения карточек - по центру экрана */
 .hugeinc-services-section .js-card-image {
-    width: 100%;
-    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 500px;
     height: auto;
     object-fit: contain;
-    justify-self: center;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    transform: scale(0.9);
-    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.hugeinc-services-section .js-card.active .js-card-image {
-    transform: scale(1);
-}
-
-/* Заголовки карточек */
-.hugeinc-services-section .js-client-name {
-    font-size: 4rem;
-    font-weight: 800;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: -0.02em;
-    transform: translateY(100px);
     opacity: 0;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: none; /* Убираем CSS transitions, используем только GSAP */
 }
 
-.hugeinc-services-section .js-card.active .js-client-name {
-    transform: translateY(0);
-    opacity: 1;
-}
 
 /* Новый скроллящийся заголовок как на HugeInc */
 .hugeinc-services-section .js-scroll-title {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, 75vh); /* Начальная позиция - снизу экрана */
+    left: 2rem; /* Отступ от левого края */
+    transform: translateY(75vh); /* Только Y-трансформация, начальная позиция - снизу экрана */
     font-size: 6rem;
     font-weight: 900;
     color: white;
-    text-align: center;
+    text-align: left; /* Выравнивание по левому краю */
     letter-spacing: -0.05em;
     white-space: nowrap;
     z-index: 10;
@@ -115,58 +94,28 @@
     opacity: 1;
 }
 
-/* Обертка для описания */
-.hugeinc-services-section .card-description-wrapper {
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-}
 
-/* Описание карточек */
+/* Описание карточек - в правом нижнем углу */
 .hugeinc-services-section .js-card-description {
-    font-size: 1.2rem;
-    color: white; /* Изменено на белый цвет */
-    line-height: 1.6;
-    margin-bottom: 30px;
-    transform: translateY(50px);
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    max-width: 800px;
+    font-size: 2rem;
+    color: white;
+    line-height: 1.5;
+    padding: 15px 20px;
+    transform: translateX(50px);
     opacity: 0;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s, 
-                opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+    transition: none; /* Убираем CSS transitions, используем только GSAP */
 }
 
 .hugeinc-services-section .js-card.active .js-card-description {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
 
-/* Кнопки карточек */
-.hugeinc-services-section .js-card-cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    transform: translateY(30px);
-    opacity: 0;
-}
 
-.hugeinc-services-section .js-card.active .js-card-cta {
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, 
-                opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
-                background 0.3s ease;
-}
-
-.hugeinc-services-section .js-card-cta:hover {
-    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
 
 /* Счетчик карточек */
 .hugeinc-services-section .card-counter {
@@ -191,10 +140,6 @@
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    .hugeinc-services-section .js-client-name {
-        font-size: 2.5rem;
-    }
-    
     .hugeinc-services-section .card-content {
         grid-template-rows: auto auto;
         gap: 20px;
@@ -205,8 +150,20 @@
         max-width: 100%;
     }
     
+    /* Описание для мобильных - правый нижний угол */
     .hugeinc-services-section .js-card-description {
-        font-size: 1rem;
+        bottom: 20px;
+        right: 20px;
+        max-width: calc(100vw - 40px); /* Адаптивная ширина с отступами */
+        font-size: 1.2rem; /* Пропорционально увеличен */
+        padding: 12px 16px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Для читаемости на градиентах */
+    }
+    
+    /* Скроллящийся заголовок для мобильных */
+    .hugeinc-services-section .js-scroll-title {
+        left: 20px; /* 20px отступ для мобильных */
+        font-size: 4rem; /* Уменьшенный размер для мобильных */
     }
 }
 
@@ -217,14 +174,6 @@
         align-items: center;
         gap: 80px;
     }
-    
-    .hugeinc-services-section .card-description-wrapper {
-        text-align: left;
-    }
-    
-    .hugeinc-services-section .js-client-name {
-        text-align: left;
-    }
 }
 
 /* Темы карточек - 12 услуг */
@@ -232,46 +181,106 @@
     background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
 }
 
+/* Цветовой фильтр для первого слайда (Web Dev & Search) */
+.hugeinc-services-section .js-card[data-theme="web-dev"] .js-card-image {
+    filter: sepia(1) hue-rotate(150deg) saturate(4) brightness(0.7) contrast(1.2);
+}
+
 .hugeinc-services-section .js-card[data-theme="adwords"] {
     background: linear-gradient(135deg, #34A853 0%, #FBBC04 100%);
+}
+
+/* Цветовой фильтр для второго слайда (Adwords & Paid Search) */
+.hugeinc-services-section .js-card[data-theme="adwords"] .js-card-image {
+    filter: sepia(1) hue-rotate(80deg) saturate(4) brightness(0.7) contrast(1.2);
 }
 
 .hugeinc-services-section .js-card[data-theme="design"] {
     background: linear-gradient(135deg, #EA4335 0%, #FF6D01 100%);
 }
 
+/* Цветовой фильтр для третьего слайда (Website Design) */
+.hugeinc-services-section .js-card[data-theme="design"] .js-card-image {
+    filter: sepia(1) hue-rotate(326deg) saturate(4) brightness(0.7) contrast(1.2);
+}
+
 .hugeinc-services-section .js-card[data-theme="seo"] {
     background: linear-gradient(135deg, #FBBC04 0%, #FF9800 100%);
+}
+
+/* Цветовой фильтр для четвертого слайда (Organic SEO) */
+.hugeinc-services-section .js-card[data-theme="seo"] .js-card-image {
+    filter: sepia(1) hue-rotate(15deg) saturate(4) brightness(0.7) contrast(1.2);
 }
 
 .hugeinc-services-section .js-card[data-theme="local-service"] {
     background: linear-gradient(135deg, #1877F2 0%, #00BCD4 100%);
 }
 
+/* Цветовой фильтр для пятого слайда (Local Service Ads) */
+.hugeinc-services-section .js-card[data-theme="local-service"] .js-card-image {
+    filter: sepia(1) hue-rotate(179deg) saturate(4) brightness(0.7) contrast(1.2);
+}
+
 .hugeinc-services-section .js-card[data-theme="law-firm"] {
     background: linear-gradient(135deg, #FF6D01 0%, #E91E63 100%);
+}
+
+/* Цветовой фильтр для шестого слайда (Law Firm Marketing) */
+.hugeinc-services-section .js-card[data-theme="law-firm"] .js-card-image {
+    filter: sepia(1) hue-rotate(320deg) saturate(4) brightness(0.7) contrast(1.2);
 }
 
 .hugeinc-services-section .js-card[data-theme="medical"] {
     background: linear-gradient(135deg, #00BCD4 0%, #2E7D32 100%);
 }
 
+/* Цветовой фильтр для седьмого слайда (Medical & Dental) */
+.hugeinc-services-section .js-card[data-theme="medical"] .js-card-image {
+    filter: sepia(1) hue-rotate(127deg) saturate(4) brightness(0.7) contrast(1.2);
+}
+
 .hugeinc-services-section .js-card[data-theme="ecommerce"] {
     background: linear-gradient(135deg, #9C27B0 0%, #673AB7 100%);
+}
+
+/* Цветовой фильтр для восьмого слайда (E Commerce Biz) */
+.hugeinc-services-section .js-card[data-theme="ecommerce"] .js-card-image {
+    filter: sepia(1) hue-rotate(270deg) saturate(4) brightness(0.7) contrast(1.2);
 }
 
 .hugeinc-services-section .js-card[data-theme="financial"] {
     background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
 }
 
+/* Цветовой фильтр для девятого слайда (CPA & Financial) */
+.hugeinc-services-section .js-card[data-theme="financial"] .js-card-image {
+    filter: sepia(1) hue-rotate(120deg) saturate(4) brightness(0.7) contrast(1.2);
+}
+
 .hugeinc-services-section .js-card[data-theme="dropship"] {
     background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%);
+}
+
+/* Цветовой фильтр для десятого слайда (Drop Ship Sites) */
+.hugeinc-services-section .js-card[data-theme="dropship"] .js-card-image {
+    filter: sepia(1) hue-rotate(5deg) saturate(4) brightness(0.7) contrast(1.2);
 }
 
 .hugeinc-services-section .js-card[data-theme="video"] {
     background: linear-gradient(135deg, #E91E63 0%, #9C27B0 100%);
 }
 
+/* Цветовой фильтр для одиннадцатого слайда (Video & TV Ads) */
+.hugeinc-services-section .js-card[data-theme="video"] .js-card-image {
+    filter: sepia(1) hue-rotate(300deg) saturate(4) brightness(0.7) contrast(1.2);
+}
+
 .hugeinc-services-section .js-card[data-theme="app-dev"] {
     background: linear-gradient(135deg, #673AB7 0%, #3F51B5 100%);
+}
+
+/* Цветовой фильтр для двенадцатого слайда (App Development) */
+.hugeinc-services-section .js-card[data-theme="app-dev"] .js-card-image {
+    filter: sepia(1) hue-rotate(206deg) saturate(4) brightness(0.7) contrast(1.2);
 }

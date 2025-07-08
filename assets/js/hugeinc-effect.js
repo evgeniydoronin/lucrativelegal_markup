@@ -114,7 +114,7 @@
         const cardsViewer = section.querySelector('.js-cards-viewer');
         const cardsList = section.querySelector('.js-cards-list');
         const cards = section.querySelectorAll('.js-card');
-        const clientNumber = section.querySelector('.js-client-number-units');
+        const clientNumber = section.querySelector('.js-client-number');
         
         if (!pinSpacer || !cardsViewer || !cardsList || cards.length === 0) {
             console.error('HugeInc Effect: Не найдены необходимые элементы для эффекта карточек');
@@ -147,28 +147,30 @@
             // Установка начального состояния
             gsap.set(card, {
                 opacity: 0,
-                visibility: 'hidden',
-                scale: 0.9
+                visibility: 'hidden'
             });
 
             // Установка начального состояния для элементов внутри карточки
             const image = card.querySelector('.js-card-image');
-            const title = card.querySelector('.js-client-name');
             const description = card.querySelector('.js-card-description');
-            const button = card.querySelector('.js-card-cta');
             const scrollTitle = card.querySelector('.js-scroll-title'); // Новый скроллящийся заголовок
 
-            gsap.set([image, title, description, button], {
+            gsap.set([image], {
                 opacity: 0,
                 y: 50
+            });
+
+            // Отдельная настройка для описания (анимация справа налево)
+            gsap.set(description, {
+                opacity: 0,
+                x: 50
             });
 
             // Установка начального состояния для скроллящегося заголовка
             if (scrollTitle) {
                 gsap.set(scrollTitle, {
                     opacity: 0,
-                    y: '75vh', // Начальная позиция снизу экрана
-                    x: '-50%'
+                    y: '75vh' // Начальная позиция снизу экрана
                 });
             }
 
@@ -186,7 +188,6 @@
             mainTimeline.to(card, {
                 opacity: 1,
                 visibility: 'visible',
-                scale: 1,
                 duration: appearanceDuration * 0.3,
                 ease: 'power2.out'
             }, startTime);
@@ -199,34 +200,22 @@
                 ease: 'power2.out'
             }, startTime + appearanceDuration * 0.1);
 
-            mainTimeline.to(title, {
-                opacity: 1,
-                y: 0,
-                duration: appearanceDuration * 0.5,
-                ease: 'power2.out'
-            }, startTime + appearanceDuration * 0.2);
 
+            // Описание появляется сразу после карточки (справа налево)
             mainTimeline.to(description, {
                 opacity: 1,
-                y: 0,
-                duration: appearanceDuration * 0.6,
+                x: 0,
+                duration: appearanceDuration * 0.5,
                 ease: 'power2.out'
-            }, startTime + appearanceDuration * 0.4);
+            }, startTime + appearanceDuration * 0.1);
 
-            mainTimeline.to(button, {
-                opacity: 1,
-                y: 0,
-                duration: appearanceDuration * 0.4,
-                ease: 'power2.out'
-            }, startTime + appearanceDuration * 0.7);
 
             // АНИМАЦИЯ СКРОЛЛЯЩЕГОСЯ ЗАГОЛОВКА (как на HugeInc)
             if (scrollTitle) {
                 // Полная анимация движения заголовка от низа до верха
                 mainTimeline.fromTo(scrollTitle, {
                     opacity: 1,
-                    y: '75vh', // Начальная позиция снизу
-                    x: '-50%'
+                    y: '75vh' // Начальная позиция снизу
                 }, {
                     y: '-75vh', // Конечная позиция вверху
                     duration: duration, // Полная длительность карточки
@@ -253,42 +242,27 @@
                 const disappearanceStart = endTime - disappearanceDuration;
                 const overlapTime = disappearanceDuration * 0.1; // 10% перекрытие с следующей карточкой
                 
-                // Плавное исчезновение элементов внутри карточки (снизу вверх)
-                mainTimeline.to([button], {
-                    opacity: 0,
-                    y: -20, // Уменьшили смещение для плавности
-                    duration: disappearanceDuration * 0.3,
-                    ease: 'power1.out' // Более мягкий easing
-                }, disappearanceStart);
-
+                // Симметричное исчезновение элементов (обратный порядок появления)
                 mainTimeline.to([description], {
                     opacity: 0,
-                    y: -25,
-                    duration: disappearanceDuration * 0.4,
-                    ease: 'power1.out'
-                }, disappearanceStart + disappearanceDuration * 0.1);
-
-                mainTimeline.to([title], {
-                    opacity: 0,
-                    y: -30,
+                    x: -50, // Исчезает влево (симметрично появлению справа)
                     duration: disappearanceDuration * 0.5,
-                    ease: 'power1.out'
-                }, disappearanceStart + disappearanceDuration * 0.2);
+                    ease: 'power2.out'
+                }, disappearanceStart);
 
                 mainTimeline.to([image], {
                     opacity: 0,
-                    y: -35,
-                    duration: disappearanceDuration * 0.6,
-                    ease: 'power1.out'
-                }, disappearanceStart + disappearanceDuration * 0.3);
+                    y: 50, // Исчезает вниз (симметрично появлению снизу)
+                    duration: disappearanceDuration * 0.4,
+                    ease: 'power2.out'
+                }, disappearanceStart + disappearanceDuration * 0.2);
 
-                // Финальное исчезновение карточки БЕЗ scale-анимации (убираем эффект уменьшения)
+                // Финальное исчезновение карточки БЕЗ scale-анимации
                 mainTimeline.to(card, {
                     opacity: 0,
                     visibility: 'hidden',
-                    scale: 1, // ИСПРАВЛЕНО: оставляем scale = 1 (без уменьшения)
                     duration: disappearanceDuration * 0.3,
-                    ease: 'power1.out' // Мягкий easing для плавности
+                    ease: 'power2.out'
                 }, disappearanceStart + disappearanceDuration * 0.7);
             }
         });
@@ -299,25 +273,15 @@
             const clampedCard = Math.min(currentCard, totalCards);
             
             if (clientNumber) {
-                clientNumber.textContent = clampedCard.toString().padStart(1, '0');
+                clientNumber.textContent = clampedCard.toString().padStart(2, '0') + '/' + totalCards.toString().padStart(2, '0');
             }
         }
 
-        // Добавление обработчиков событий для кнопок
-        cards.forEach((card, index) => {
-            const button = card.querySelector('.js-card-cta');
-            if (button) {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    handleCardClick(index, card);
-                });
-            }
-        });
 
         // Обработчик клика по карточке
         function handleCardClick(index, card) {
             const theme = card.getAttribute('data-theme');
-            const title = card.querySelector('.js-client-name').textContent;
+            const title = card.querySelector('.js-scroll-title').textContent;
             
             // Простая демонстрация - можно заменить на реальную логику
             console.log(`Клик по карточке ${index + 1}: ${title} (${theme})`);
