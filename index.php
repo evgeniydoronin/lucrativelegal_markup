@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/atropos.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/hugeinc-effect.css">
+    <link rel="stylesheet" href="assets/css/header-globe.css">
     <!-- CSS here -->
 
     <!-- GSAP Library - для анимации космонавта -->
@@ -340,7 +341,7 @@
                 <div class="tp-hero-area tp-hero-ptb tp-image-distortion p-relative fix z-index-1" data-background="assets/img/bg-wrap-2.jpg">
                     <div class="container container-1750">
                         <div class="row">
-                            <div class="col-xl-9">
+                            <div class="col-xl-8">
                                 <div class="tp-hero-title-box">
                                     <h2 class="tp-hero-title tp-char-animation">
                                         <span>The Future</span> <br>
@@ -348,31 +349,14 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="col-xl-3">
+                            <div class="col-xl-4">
                                 <div class="tp-hero-content-wrap d-flex flex-xl-column justify-content-between pb-20">
-                                    <div class="tp-hero-info d-flex align-items-start justify-content-between tp_text_anim">
-                                        <p>Legal Leads Group is a full-service lead generation and tech support solution for your law firm and business. We handle all of your digital marketing, traditional ads, media buys, and so much more.</p>
-                                        <span>
-                                            <a href="#">
-                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1 21L21 1M21 1H1M21 1V21" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1 21L21 1M21 1H1M21 1V21" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </a>
-                                        </span>
-                                    </div>
-                                    <div class="tp-hero-more-info-wrap d-inline-flex justify-content-end tp_fade_anim" data-delay="1.5">
-                                        <div class="tp-hero-more-info p-relative" data-background="assets/img/home-01/hero/hero-svg-1.svg">
-                                            <span class="tp-hero-line d-none d-sm-block"></span>
-                                            <div class="tp-hero-avater d-flex align-items-center justify-content-between">
-                                                <img src="assets/img/home-01/hero/hero-avater.jpg" alt="">
-                                                <span>Juan Mauel</span>
-                                            </div>
-                                            <p>“The depth of exploration and quality of the work was great”</p>
-                                            <div class="tp-hero-link text-end">
-                                                <a href="#">More</a>
+                                    <div class="tp-hero-more-info-wrap d-inline-flex justify-content-center tp_fade_anim" data-delay="1.5">
+                                        <!-- Глобус в hero секции -->
+                                        <div class="tp-hero-globe-container">
+                                            <canvas id="heroGlobeCanvas"></canvas>
+                                            <div class="tp-hero-globe-logo">
+                                                <img src="assets/img/logo_path.png" alt="Legal Leads Group Logo">
                                             </div>
                                         </div>
                                     </div>
@@ -879,73 +863,8 @@
                 </div>
                 <!-- text slider area end -->
 
-                <!-- service area start -->
-                <div class="tp-service-area pt-120">
-                    <div class="container-fluid p-0">
-                        <div class="row gx-0">
-                            <div class="col-12">
-                                <div class="tp-service-title-box">
-                                    <span class="tp-section-subtitle pre">Services</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tp-service-pin">
-                            <div class="tp-service-item tp-service-panel">
-                                <div class="row">
-                                    <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-1">
-                                        <div class="tp-service-number">
-                                            <span>01.</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-7">
-                                        <div class="tp-service-content">
-                                            <h4 class="tp-section-title"><a class="tp_text_invert" href="#">SEO & Organic Marketing</a></h4>
-                                            <p>
-                                                Organic and MAP rankings help prove to your potential clients that you are a REAL provider of goods and services. People TRUST what they see organically. We make sure you rank at the TOP of page ONE on Google. 
-                                            </p>
-                                            <div class="tp-service-btn">
-                                                <a href="#" class="tp-btn-black btn-red-bg">
-                                                    <span class="tp-btn-black-filter-blur">
-                                                        <svg width="0" height="0">
-                                                            <defs>
-                                                                <filter id="buttonFilter2">
-                                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
-                                                                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></feColorMatrix>
-                                                                    <feComposite in="SourceGraphic" in2="buttonFilter2" operator="atop"></feComposite>
-                                                                    <feBlend in="SourceGraphic" in2="buttonFilter2"></feBlend>
-                                                                </filter>
-                                                            </defs>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="tp-btn-black-filter d-inline-flex align-items-center" style="filter: url(#buttonFilter2)">
-                                                        <span class="tp-btn-black-text">See more</span>
-                                                        <span class="tp-btn-black-circle">
-                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="tp-service-category">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                                        <div class="tp-service-thumb text-end">
-                                            <img class="tp_fade_anim" data-fade-from="right" data-delay=".2" src="assets/img/home-01/service/service-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- service area end -->
-
                 <!-- video area start -->
-                <div class="tp-video-area black-bg mt-120 fix">
+                <div class="tp-video-area black-bg fix">
                     <div class="container-fluid p-0">
                         <div class="tp-video-thumb-wrap">
                             <div class="tp-video-thumb d-none d-xl-block">
@@ -2083,11 +2002,13 @@
     <!-- JS here -->
 
 
+    <!-- Three.js должен загружаться первым -->
+    <script src="assets/js/three.js"></script>
+    
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/bootstrap-bundle.js"></script>
     <script src="assets/js/swiper-bundle.js"></script>
     <script src="assets/js/plugin.js"></script>
-    <script src="assets/js/three.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/scroll-magic.js"></script>
     <script src="assets/js/hover-effect.umd.js"></script>
@@ -2117,11 +2038,65 @@
     <!-- Анимация космонавта -->
     <script src="assets/js/astronaut-animation.js"></script>
 
+    <!-- Header Globe Animation -->
+    <script src="assets/js/components/header-globe.js"></script>
+
     <!-- Lenis для плавной прокрутки -->
     <script src="https://unpkg.com/lenis@1.3.3/dist/lenis.min.js"></script>
     
     <!-- HugeInc Effect Script -->
     <script src="assets/js/hugeinc-effect.js"></script>
+
+    <!-- Three.js and Effects Initialization -->
+    <script>
+        // Функция инициализации глобуса
+        function initializeHeroGlobe() {
+            // Проверяем наличие Three.js
+            if (typeof THREE !== 'undefined') {
+                console.log('✅ Three.js loaded successfully, version:', THREE.REVISION);
+                
+                // Инициализируем глобус в hero секции
+                try {
+                    const heroGlobe = new HeaderGlobeAnimation('heroGlobeCanvas');
+                    window.heroGlobe = heroGlobe;
+                    console.log('✅ Hero Globe initialized successfully');
+                } catch (error) {
+                    console.error('❌ Hero Globe initialization failed:', error);
+                }
+                
+                // Проверяем hover-effect после загрузки Three.js
+                if (typeof hoverEffect !== 'undefined') {
+                    console.log('✅ hoverEffect library loaded successfully');
+                } else {
+                    console.warn('⚠️ hoverEffect library not found');
+                }
+                
+            } else {
+                console.error('❌ Three.js library not loaded. Cannot initialize 3D effects.');
+            }
+        }
+
+        // Ждем полной загрузки страницы, включая все ресурсы
+        window.addEventListener('load', function() {
+            console.log('🚀 Page fully loaded, initializing globe...');
+            
+            // Дополнительная задержка для гарантии загрузки всех скриптов
+            setTimeout(initializeHeroGlobe, 200);
+        });
+
+        // Резервная инициализация через DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('📄 DOM loaded, setting up fallback initialization...');
+            
+            // Если через 2 секунды глобус не инициализирован, пробуем еще раз
+            setTimeout(function() {
+                if (!window.heroGlobe) {
+                    console.log('🔄 Fallback globe initialization...');
+                    initializeHeroGlobe();
+                }
+            }, 2000);
+        });
+    </script>
 
     <!-- JS here -->
     <!-- JS here -->
