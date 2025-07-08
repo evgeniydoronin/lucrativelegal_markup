@@ -373,18 +373,18 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="dgm-about-thumb-wrap p-relative">
-                                    <img class="tp_fade_anim" data-delay=".3" data-fade-from="left" src="assets/img/home-03/about/about-1.jpg" alt="">
-                                    <img class="dgm-about-thumb-1 tp_fade_anim" data-speed="1.1" data-delay=".5" src="assets/img/home-03/about/about-2.jpg" alt="">
+                                    <img class="tp_fade_anim" data-delay=".3" data-fade-from="left" src="assets/img/home-01/partners/Google-Ads-Agency.png" alt="">
+                                    <img class="dgm-about-thumb tp_fade_anim" data-speed="1.9" data-delay=".9" src="assets/img/home-01/partners/PikPng.com_ithaca-college-logo-png_4736362.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="dgm-about-right">
                                     <div class="dgm-about-title-box z-index-1 mb-35">
-                                        <span class="tp-section-subtitle subtitle-black mb-15 tp_fade_anim" data-delay=".3">About our Agency</span>
+                                        <span class="tp-section-subtitle subtitle-black mb-15 tp_fade_anim" data-delay=".3">About our Group</span>
                                         <h4 class="tp-section-title-grotesk tp_fade_anim" data-delay=".5">
-                                            Social
+                                            Certified
                                             <span class="p-relative">
-                                                marketing
+                                                Google Partner
                                                 <span class="tp-section-title-shape">
                                                     <svg width="280" height="15" viewBox="0 0 280 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M157.643 0.463566C152.553 0.665187 132.813 1.06843 113.879 1.37086C64.4049 2.12693 43.5474 2.7822 26.6628 3.94151C13.5027 4.8488 1.02542 6.15933 0.342587 6.71379C0.218435 6.8146 0.094283 8.07472 0.0322071 9.48606C-0.0919446 11.7543 0.094283 12.1575 1.45995 12.964C2.32901 13.4681 3.50846 13.9721 4.00506 14.1233C4.87413 14.3753 38.5193 12.8632 46.527 12.2079C50.0654 11.9559 159.009 10.847 185.577 10.7966C195.137 10.7966 217.36 11.099 234.927 11.5023C252.495 11.9055 268.386 12.1575 270.186 12.1071C274.656 12.0063 278.629 10.2421 278.815 8.32675C278.877 7.16743 278.691 6.96581 277.263 6.91541C275.711 6.865 275.711 6.8146 277.636 6.46176C280.305 5.95771 280.615 5.65528 279.063 4.94961C277.573 4.29435 277.325 3.43746 278.691 3.43746C279.187 3.43746 279.622 3.18544 279.622 2.93341C279.622 2.63098 279.312 2.42936 278.877 2.42936C278.505 2.42936 276.891 1.92531 275.339 1.32045L272.483 0.211542L219.719 0.161136C190.729 0.110732 162.795 0.261946 157.643 0.463566ZM200.475 2.47977C200.848 2.68139 204.572 2.88301 208.855 2.88301C213.139 2.93341 221.209 3.13503 226.857 3.38706C235.858 3.7903 234.865 3.8407 218.788 3.63908C208.731 3.53827 192.281 3.43746 182.225 3.43746C172.169 3.43746 164.099 3.33665 164.223 3.23584C164.409 3.08463 171.3 2.93341 179.556 2.88301C187.812 2.7822 194.888 2.58058 195.323 2.32855C196.254 1.87491 199.544 1.92531 200.475 2.47977ZM264.538 3.28625C263.296 3.38706 261.31 3.38706 260.192 3.28625C259.137 3.18544 260.192 3.08463 262.551 3.08463C264.972 3.08463 265.841 3.18544 264.538 3.28625ZM128.095 3.63908C127.971 3.73989 113.631 3.89111 96.1877 3.99192C78.8065 4.14313 68.8744 4.09273 74.1508 3.94151C85.2624 3.58868 128.467 3.33665 128.095 3.63908ZM159.009 3.73989C158.822 3.89111 158.264 3.94151 157.829 3.7903C157.332 3.63908 157.519 3.48787 158.202 3.48787C158.884 3.43746 159.257 3.58868 159.009 3.73989ZM268.759 7.01622C269.193 7.36905 267.393 7.46986 263.172 7.41946C259.758 7.31865 247.591 7.31865 236.169 7.36905C224.747 7.41946 213.822 7.36905 211.959 7.26824C206.435 6.91541 176.576 6.865 154.229 7.11703C131.261 7.41946 129.833 7.16743 150.815 6.51217C169.624 5.90731 267.952 6.36095 268.759 7.01622ZM118.845 7.52027C100.099 7.92351 80.7929 7.92351 85.3245 7.46986C87.1867 7.26824 98.7949 7.11703 111.086 7.11703C132.999 7.16743 133.185 7.16743 118.845 7.52027ZM200.786 7.97391C200.786 8.22594 200.351 8.32675 199.854 8.17553C199.358 7.97391 198.923 7.77229 198.923 7.67148C198.923 7.57067 199.358 7.46986 199.854 7.46986C200.351 7.46986 200.786 7.67148 200.786 7.97391ZM202.648 7.97391C202.648 8.22594 202.338 8.47796 201.965 8.47796C201.655 8.47796 201.531 8.22594 201.717 7.97391C201.903 7.67148 202.213 7.46986 202.4 7.46986C202.524 7.46986 202.648 7.67148 202.648 7.97391ZM207.304 7.97391C207.49 8.22594 207.242 8.47796 206.745 8.47796C206.186 8.47796 205.752 8.22594 205.752 7.97391C205.752 7.67148 206 7.46986 206.31 7.46986C206.683 7.46986 207.117 7.67148 207.304 7.97391ZM266.276 8.47796C267.393 8.8812 267.393 8.93161 265.965 8.8812C265.096 8.8812 263.606 8.67958 262.551 8.47796L260.689 8.07472H262.862C264.041 8.07472 265.593 8.22594 266.276 8.47796ZM122.694 8.8308C113.383 8.93161 98.2983 8.93161 89.1732 8.8308C80.048 8.78039 87.6833 8.72999 106.12 8.72999C124.556 8.72999 132.006 8.78039 122.694 8.8308ZM5.86734 10.4942C5.86734 10.7462 4.9362 10.9982 3.88091 10.9478C2.14279 10.9478 2.01864 10.847 3.07393 10.4942C4.81205 9.8893 5.86734 9.8893 5.86734 10.4942ZM15.7374 10.1917C15.6133 10.2925 13.3785 10.4942 10.8334 10.6454C7.79169 10.847 6.4881 10.7966 7.10886 10.4942C7.97792 10.0405 16.3582 9.73809 15.7374 10.1917ZM258.392 11.351C257.461 11.4519 255.785 11.4519 254.667 11.351C253.55 11.2502 254.295 11.1494 256.344 11.1494C258.392 11.1494 259.323 11.2502 258.392 11.351Z" fill="url(#paint0_linear_5012_164)" />
@@ -397,39 +397,44 @@
                                                     </svg>
                                                 </span>
                                             </span>
-                                            & advertising.
+                                            Firm.
                                         </h4>
                                     </div>
                                     <div class="dgm-about-content">
                                         <div class="tp_fade_anim" data-delay=".3">
                                             <p>
-                                                We provide digital experience services to start up and small businesses. We
-                                                help our clients succeed by creating brand identities, digital experiences,
-                                                and print materials. Install any demo, plugin or template in a matter of
-                                                seconds.
+                                                At Legal Leads Group, we’re all about transparency. Being a Google Partner Firm doesn’t mean we have some special “inside track” with Google. But it does mean we’ve performed very well with ad campaigns, achieved Google milestones, and most of all kept clients happy and flush with new business. Turn to a TRUSTED partner for your lead generation needs. Click on the Google Partner Badge icon to the right. Click here to view our listing within the Google Partner directory, Or, call us now to learn more about our lead generation campaigns.
                                             </p>
                                         </div>
-                                        <div class="tp_fade_anim" data-delay=".5">
-                                            <a class="tp-btn-yellow-green green-solid btn-60 mb-50" href="about-us-light.html">
-                                                <span>
-                                                    <span class="text-1">More about us</span>
-                                                    <span class="text-2">More about us</span>
+                                        <div class="tp_fade_anim mb-10" data-delay=".5">
+                                            <a href="#" class="tp-btn-black btn-red-bg">
+                                                <span class="tp-btn-black-filter-blur">
+                                                    <svg width="0" height="0">
+                                                        <defs>
+                                                            <filter id="buttonFilter6">
+                                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                                                <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></feColorMatrix>
+                                                                <feComposite in="SourceGraphic" in2="buttonFilter6" operator="atop"></feComposite>
+                                                                <feBlend in="SourceGraphic" in2="buttonFilter6"></feBlend>
+                                                            </filter>
+                                                        </defs>
+                                                    </svg>
                                                 </span>
-                                                <i>
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </i>
+                                                <span class="tp-btn-black-filter d-inline-flex align-items-center" style="filter: url(#buttonFilter6)">
+                                                    <span class="tp-btn-black-text">About Us</span>
+                                                    <span class="tp-btn-black-circle">
+                                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </span>
+                                                </span>
                                             </a>
                                         </div>
                                         <div class="dgm-about-review-wrap tp_fade_anim" data-delay=".6">
                                             <div class="dgm-about-review-box d-inline-flex align-items-center">
                                                 <div class="dgm-about-review">
-                                                    <h4>4.9</h4>
-                                                    <span>( 24 review )</span>
+                                                    <h4>5.0</h4>
+                                                    <span>( 67 review )</span>
                                                 </div>
                                                 <div class="dgm-about-ratting">
                                                     <h4>Average Rating</h4>
@@ -1411,136 +1416,191 @@
                 </div>
                 <!-- funfact area end -->
 
-                <!-- work area start -->
-                <div class="tp-work-area pt-120 pb-145 tp-panel-pin-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="tp-work-title-box tp-panel-pin">
-                                    <span class="tp-section-subtitle pre mb-20">Services</span>
-                                    <h2 class="tp-section-title fs-140">Legal Leads Group Services</h2>
+                <!-- service area start -->
+                <div class="tp-service-area pt-120">
+                    <div class="container-fluid p-0">
+                        <div class="row gx-0">
+                            <div class="col-6">
+                                <div class="tp-service-title-box">
+                                    <span class="tp-section-subtitle pre">Legal Leads Group News</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="tp-work-wrapper">
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>01</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Web Dev & Search</h4>
-                                            <p>From Attorneys to Dentists, and every Business Owner in between, you need NEW clients every month. We understand your needs and we provide full proof plans that allow you to convert organic leads into paying customers. How do we do that? Simple, through market analysis and quality programming. All of which we control in-house.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>02</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Adwords & Paid Seach</h4>
-                                            <p>Our Google AdWords Certified Professionals work one on one with each client. By providing a non-compete clause, we focus on your geographical territory and destroy your competitors. There is nothing more powerful than a successful paid ads campaign. When properly managed with SEO, your business becomes unstoppable.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>03</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Website Design</h4>
-                                            <p>Your website says who you are, and what your business is about. From law firms to dentists, and everything in between, your site says why clients should hire you instead of one of your competitors. We design and develop custom sites that establish your business as the premier choice in your field or industry.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>04</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Organic SEO</h4>
-                                            <p>Organic and MAP rankings help prove to your potential clients that you are a REAL provider of goods and services. People TRUST what they see organically. We make sure you rank at the TOP of page ONE on Google. Schedule a free Organic SEO review today and let us help boost your sites natural rankings. Thus improving your traffic and leads.</p>
+                            <div class="col-6">
+                                <div class="tp-project-link text-start text-md-end mr-20">
+                                    <a href="#" class="tp-btn-black btn-red-bg">
+                                        <span class="tp-btn-black-filter-blur">
+                                            <svg width="0" height="0">
+                                                <defs>
+                                                    <filter id="buttonFilter6">
+                                                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                                        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></feColorMatrix>
+                                                        <feComposite in="SourceGraphic" in2="buttonFilter6" operator="atop"></feComposite>
+                                                        <feBlend in="SourceGraphic" in2="buttonFilter6"></feBlend>
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <span class="tp-btn-black-filter d-inline-flex align-items-center" style="filter: url(#buttonFilter6)">
+                                            <span class="tp-btn-black-text">View all News</span>
+                                            <span class="tp-btn-black-circle">
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tp-service-pin">
+                            <div class="tp-service-item tp-service-panel">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-1">
+                                        <div class="tp-service-number">
+                                            <span>01.</span>
                                         </div>
                                     </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>05</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Local Service Ads</h4>
-                                            <p>As certified Google AdWords Professionals we believe 100% in Google AdWords and Google Local Service Ads. We also focus on other forms of paid search such as Yelp and Facebook. Paid Ads, when properly managed, delivers INSTANT results for your business. Call us today to schedule a FREE analysis on how to manage a paid ad campaign.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>06</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Law Firm Marketing</h4>
-                                            <p>Whether you’re a Personal Injury, Criminal Defense, or Divorce Lawyer you NEED new clients calling you every month. The term “Personal Injury Attorney” can go for over $900.00 a click on AdWords depending upon your city and state location. We deliver organic results that mirror the top searched and clicked AdWord campaigns. Period.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>07</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Medical & Dental</h4>
-                                            <p>Whether you’re a Dentist or a Plastic Surgeon, you need new patients paying you for services every month. You also need a website that looks amazing and functions with your reviews and social presence. We do all of it for you. Our six step process streamlines your digital assets and drives you the patients your practice needs monthly.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>08</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">E Commerce Biz</h4>
-                                            <p>If you sell goods and services online than you know the competitive nature of the E Commerce World. We can make your website standout. This drives you more traffic and more conversions leads to more paying customers. From retargeting to providing new customers, we have the technology you and your e-biz need to thrive.</p>
+                                    <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-7">
+                                        <div class="tp-service-content">
+                                            <h4 class="tp-section-title"><a class="tp_text_invert" href="#">Multi-Channel Marketing for Attorneys’ Practicing Family Law</a></h4>
+                                            <p>
+                                                Multi-Channel Marketing for Family Law Attorneys Every successful attorney is backed by a full-scale Multichannel marketing agency or in-house department. While mediums like TV or radio can provide great exposure for brand recognition, traditional marketing channels.
+                                            </p>
+                                            <div class="tp-service-btn">
+                                                <a href="#" class="tp-btn-black btn-red-bg">
+                                                    <span class="tp-btn-black-filter-blur">
+                                                        <svg width="0" height="0">
+                                                            <defs>
+                                                                <filter id="buttonFilter2">
+                                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                                                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></feColorMatrix>
+                                                                    <feComposite in="SourceGraphic" in2="buttonFilter2" operator="atop"></feComposite>
+                                                                    <feBlend in="SourceGraphic" in2="buttonFilter2"></feBlend>
+                                                                </filter>
+                                                            </defs>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tp-btn-black-filter d-inline-flex align-items-center" style="filter: url(#buttonFilter2)">
+                                                        <span class="tp-btn-black-text">Read more</span>
+                                                        <span class="tp-btn-black-circle">
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="tp-service-category">
+                                                <span>Family Law Marketing</span>
+                                                <span>Law Firm Marketing</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>09</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">CPA & Financial</h4>
-                                            <p>You not only need a website and local online presence, you also need to stay compliant with FTC, SEC, and local and national  rules and regulations about what you say and advertise on your website. We work directly with you to solve these problems, as well as sync your site with online calculators and information directories for your practice.</p>
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                                        <div class="tp-service-thumb text-end">
+                                            <img class="tp_fade_anim" data-fade-from="right" data-delay=".2" src="assets/img/home-01/news/1.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>10</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Drop Ship Sites</h4>
-                                            <p>Drop Shipping has been around for decades. However, over the past 18 months it has become a booming business, providing entrepreneur and stay at home moms a new way to make money. Our Drop Ship Websites come fully functional, SEO optimized, and can have full API integration with Drop Ship Providers.</p>
-                                        </div>
-                                    </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>11</i>
-                                        </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">Video & TV Ads</h4>
-                                            <p>We also develop custom one of a kind videos for YouTube, Social Media, as well as traditional Television Commercials. We also handle the media buys and production management. Your commercials run at the most profitable times. Oh yeah, our reps have 3 decades of experience.</p>
+                                </div>
+                            </div>
+                            <div class="tp-service-item tp-service-panel">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-1">
+                                        <div class="tp-service-number">
+                                            <span>02.</span>
                                         </div>
                                     </div>
-                                    <div class="tp-work-item tp-panel-pin mb-15">
-                                        <div class="tp-work-number p-relative">
-                                            <span></span>
-                                            <i>12</i>
+                                    <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-7">
+                                        <div class="tp-service-content">
+                                            <h4 class="tp-section-title"><a class="tp_text_invert" href="#">Proven Employment Law Marketing Techniques That Grow Your Firm</a></h4>
+                                            <p>
+                                                Marketing in the employment law space is uniquely challenging and uniquely rewarding. Unlike other legal practice areas, employment law directly touches on people’s livelihoods, dignity, and sense of justice. Prospective clients are often navigating high-stakes situations like discrimination, retaliation, harassment, or wrongful termination.
+                                            </p>
+                                            <div class="tp-service-btn">
+                                                <a href="#" class="tp-btn-black btn-red-bg">
+                                                    <span class="tp-btn-black-filter-blur">
+                                                        <svg width="0" height="0">
+                                                            <defs>
+                                                                <filter id="buttonFilter3">
+                                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                                                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></feColorMatrix>
+                                                                    <feComposite in="SourceGraphic" in2="buttonFilter3" operator="atop"></feComposite>
+                                                                    <feBlend in="SourceGraphic" in2="buttonFilter3"></feBlend>
+                                                                </filter>
+                                                            </defs>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tp-btn-black-filter d-inline-flex align-items-center" style="filter: url(#buttonFilter3)">
+                                                        <span class="tp-btn-black-text">Read more</span>
+                                                        <span class="tp-btn-black-circle">
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="tp-service-category">
+                                                <span>Case Conversions</span>
+                                                <span>Employment Law Leads</span>
+                                                <span>Law Firm Marketing</span>
+                                                <span>SEO for Lawyers</span>
+                                            </div>
                                         </div>
-                                        <div class="tp-work-content">
-                                            <h4 class="tp-work-title">App Development</h4>
-                                            <p>Everyone wants to use a mobile APP. We can convert your law firm, dental, or business website into a fully functioning mobile APP. We also develop custom, complex APP’s and manage them on IOS and Android Platforms. Better than that, our developers are cerftified by Google to build and place aps on IOS & Android.</p>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                                        <div class="tp-service-thumb text-end">
+                                            <img class="tp_fade_anim" data-fade-from="right" data-delay=".2" src="assets/img/home-01/news/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-service-item tp-service-panel">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-xl-2 col-lg-1 col-md-1">
+                                        <div class="tp-service-number">
+                                            <span>03.</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-7">
+                                        <div class="tp-service-content">
+                                            <h4 class="tp-section-title"><a class="tp_text_invert" href="#">The Do’s and Don’ts of Google Ads for Personal Injury Lawyers</a></h4>
+                                            <p>
+                                                The Do's and Don'ts of Google Ads for Personal Injury Lawyers Yup, you guessed it, another blog about personal injury attorney marketing. Look, we love helping all types of attorneys. We've built and managed highly aggressive case generation campaigns for law firms
+                                            </p>
+                                            <div class="tp-service-btn">
+                                                <a href="#" class="tp-btn-black btn-red-bg">
+                                                    <span class="tp-btn-black-filter-blur">
+                                                        <svg width="0" height="0">
+                                                            <defs>
+                                                                <filter id="buttonFilter4">
+                                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                                                    <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></feColorMatrix>
+                                                                    <feComposite in="SourceGraphic" in2="buttonFilter4" operator="atop"></feComposite>
+                                                                    <feBlend in="SourceGraphic" in2="buttonFilter4"></feBlend>
+                                                                </filter>
+                                                            </defs>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tp-btn-black-filter d-inline-flex align-items-center" style="filter: url(#buttonFilter4)">
+                                                        <span class="tp-btn-black-text">Read more</span>
+                                                        <span class="tp-btn-black-circle">
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1 9L9 1M9 1H1M9 1V9" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="tp-service-category">
+                                                <span>Car Accident Injury Case Leads</span>
+                                                <span>Google Ads for Personal Injury Attorneys</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                                        <div class="tp-service-thumb text-end">
+                                            <img class="tp_fade_anim" data-fade-from="right" data-delay=".2" src="assets/img/home-01/news/3.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1548,7 +1608,73 @@
                         </div>
                     </div>
                 </div>
-                <!-- work area end -->
+                <!-- service area end -->
+
+                <!-- brand area start -->
+                <div class="des-brand-area pb-140 pt-120">
+                    <div class="container container-1510">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="des-brand-title-box mb-40">
+                                    <h3 class="tp-section-title-main fw-700 mb-0">Partners</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="des-brand-moving-wrap">
+                        <div class="des-brand-moving-top moving-text pb-10">
+                            <div class="des-brand-item wrapper-text black-style d-flex align-items-center">
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/1.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/2.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/5.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/4.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/3.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/6.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/7.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des-brand-moving-bottom moving-text">
+                            <div class="des-brand-item wrapper-text black-style d-flex align-items-center">
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/1.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/2.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/5.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/4.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/3.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/6.png" alt="">
+                                </div>
+                                <div class="des-brand-item-inner">
+                                    <img src="assets/img/home-01/partners/7.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- brand area end -->
 
                 <!-- award area start -->
                 <div class="tp-award-area tp-award-bg">
@@ -1700,7 +1826,7 @@
                                             <img src="assets/img/home-01/testimonial/testi-logo.png" alt="">
                                             <div class="tp-testimonial-ratting-info">
                                                 <div class="tp-testimonial-ratting-icon">
-                                                    <span>4.9/5</span>
+                                                    <span>5/5</span>
                                                     <i>
                                                         <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M7 0L8.6458 4.73475L13.6574 4.83688L9.66296 7.86525L11.1145 12.6631L7 9.8L2.8855 12.6631L4.33704 7.86525L0.342604 4.83688L5.3542 4.73475L7 0Z" fill="#EF2B10" />
@@ -1727,7 +1853,7 @@
                                                         </svg>
                                                     </i>
                                                 </div>
-                                                <p>Based on 137 reviews on Clutch</p>
+                                                <p>Based on 67 reviews on Clutch</p>
                                             </div>
                                         </div>
                                     </div>

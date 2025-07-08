@@ -864,6 +864,203 @@
 			}
 		}
 	}
+	&-main-purple{
+		border-radius: 10px;
+		padding: 16px 24px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1;
+		display: inline-block;
+		letter-spacing: -0.01em;
+		text-transform: uppercase;
+		color: var(--tp-common-white);
+		background-color: var(--tp-common-purple);
+		& span{
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			display: inline-block;
+			& span{
+				&.text-1{
+					position: relative;
+					display: block;
+					transition: 0.3s;
+				}
+				&.text-2{
+					position: absolute;
+					top: 100%;
+					display: block;
+					transition: 0.3s;
+				}
+			}
+		}
+		&.lg{
+			font-size: 16px;
+			padding: 22px 28px;
+			@media #{$md,$xs}{
+				font-size: 14px;
+				padding: 17px 20px;
+			}
+		}
+		&.purple-solid{
+			gap: 8px;
+			line-height: 1;
+			font-size: 16px;
+			font-weight: 600;
+			padding: 18px 24px;
+			letter-spacing: -0.01em;
+			text-transform: capitalize;
+			color: var(--tp-common-black);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--tp-common-purple);
+			& span{
+				position: relative;
+				z-index: 1;
+				overflow: hidden;
+				display: inline-block;
+				& span{
+					&.text-1{
+						position: relative;
+						display: block;
+						transition: 0.3s;
+					}
+					&.text-2{
+						position: absolute;
+						top: 100%;
+						display: block;
+						transition: 0.3s;
+					}
+				}
+			}
+			&.btn-60{
+				padding: 23px 24px;
+				& span{
+					position: relative;
+					z-index: 1;
+					overflow: hidden;
+					display: inline-block;
+					& span{
+						&.text-1{
+							position: relative;
+							display: block;
+							transition: 0.3s;
+						}
+						&.text-2{
+							position: absolute;
+							top: 100%;
+							display: block;
+							transition: 0.3s;
+						}
+					}
+				}
+				& i{
+					position: relative;
+					overflow: hidden;
+					width: 14px;
+					height: 14px;
+					display: inline-flex;
+					margin-left: 4px;
+					& svg{
+						transform: translateY(-2px);
+						position: absolute;
+						bottom: -1px;
+						left: 1px;
+						transition: all 0.2s ease-out;
+						&:last-child{
+							left: -12px;
+							bottom: -12px;
+							transform: translate(0, 0);
+							opacity: 0;
+						}
+					}
+				}
+				&:hover{
+					color: var(--tp-common-black);
+					& span{
+						& span{
+							&.text-1{
+								-webkit-transform: translateY(-150%);
+								transform: translateY(-150%);
+							}
+							&.text-2{
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								transform: translateY(-50%);
+							}
+						}
+					}
+					& i{
+						& svg:first-child{
+							transform: translate(16px, -16px);
+						}
+						& svg:last-child{
+							opacity: 1;
+							visibility: visible;
+							transform: translate(13px, -13px);
+						}
+					}
+				}
+			}
+			&:hover{
+				color: var(--tp-common-black);
+				& span{
+					& span{
+						&.text-1{
+							-webkit-transform: translateY(-150%);
+							transform: translateY(-150%);
+						}
+						&.text-2{
+							top: 50%;
+							-webkit-transform: translateY(-50%);
+							transform: translateY(-50%);
+						}
+					}
+				}
+			}
+			&:focus{
+				color: var(--tp-common-black);
+			}
+		}
+		&:hover{
+			color: var(--tp-common-black);
+			& span{
+				& span{
+					&.text-1{
+						-webkit-transform: translateY(-150%);
+						transform: translateY(-150%);
+					}
+					&.text-2{
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+		&:focus{
+			color: var(--tp-common-black);
+		}
+		&.sidebar-btn{
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 1;
+			color: #16302f;
+			padding: 18px 24px;
+			letter-spacing: -0.01em;
+			background-color: #D0FF71;
+			&.sidebar-btn-style{
+				padding: 20px 54px;
+				padding-bottom: 16px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 1;
+				color: #16302f;
+				letter-spacing: -0.01em;
+			}
+		}
+	}
 	&-red-border{
 		border-radius: 20px;
 		padding: 11px 20px;

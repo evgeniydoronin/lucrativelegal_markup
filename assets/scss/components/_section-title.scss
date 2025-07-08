@@ -247,16 +247,16 @@
         letter-spacing: -0.01em;
         color: var(--tp-common-purple);
         @media #{$x4l}{
-            font-size: 70px;
+            font-size: 30px;
         }
         @media #{$x3l}{
-            font-size: 60px;
+            font-size: 30px;
         }
         @media #{$xxl,$xl,$lg,$md}{
-            font-size: 50px;
+            font-size: 20px;
         }
         @media #{$xs}{
-            font-size: 42px;
+            font-size: 18px;
         }
         &.fs-140{
             line-height: .89;
@@ -369,6 +369,27 @@
             &.fs-100{
                 font-size: 100px;
                 font-family: var(--tp-ff-mango-semibold);
+                @media #{$md} {
+                    font-size: 80px;
+                }
+                @media #{$xs}{
+                    font-size: 50px;
+                }
+            }
+            @media #{$xs}{
+                font-size: 50px;
+            }
+        }
+        &-main{
+            font-size: 56px;
+            line-height: 1;
+            color: var(--tp-common-purple);
+            font-family: var(--tp-ff-body);
+            &.fw-700{
+                font-weight: 700;
+            }
+            &.fs-100{
+                font-size: 100px;
                 @media #{$md} {
                     font-size: 80px;
                 }

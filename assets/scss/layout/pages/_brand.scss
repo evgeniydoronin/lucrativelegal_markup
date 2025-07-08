@@ -13,9 +13,9 @@
     &-item{
         &.black-style{
             & .des-brand-item-inner{
-                background-color: #1B1B1D;
+                background-color: #fbfbfb;
                 & img{
-                    filter: invert(1);
+                    width: 50%;
                 }
             }
         }
@@ -23,6 +23,7 @@
             height: 220px;
             min-width: 380px;
             display: grid;
+            justify-items: center;
             padding: 40px;
             margin: 0px 5px;
             border-radius: 20px;
